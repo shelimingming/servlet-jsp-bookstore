@@ -20,5 +20,6 @@
         <property name="maxStatements">20</property>
         <!--maxStatementsPerConnection定义了连接池内单个连接所拥有的最大缓存statements数。Default: 0 -->
         <property name="maxStatementsPerConnection">5</property>
+
     </named-config>
 </c3p0-config>

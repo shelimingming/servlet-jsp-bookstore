@@ -38,7 +38,9 @@ public class JDBCUtils {
      * @throws SQLException
      */
     public static Connection getConnection() throws SQLException {
-        return dataSource.getConnection();
+        Connection connection = dataSource.getConnection();
+        //connection.setAutoCommit(false);
+        return connection;
     }
 
     public static DataSource getDataSource() {

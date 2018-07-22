@@ -45,4 +45,9 @@ public abstract class CommonDaoImpl<T extends Serializable> implements ICommonDa
     public List<T> find(int start, int count, String order) {
         return null;
     }
+
+    @Override
+    public List<T> findByCondition(String... conditions) {
+        return null;
+    }
 }

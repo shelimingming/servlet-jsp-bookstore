@@ -18,6 +18,10 @@ public interface ICommonDao<T extends Serializable> {
 
     List<T> findByInstance(T t);
 
+    List<T> findByCondition(String... conditions);
+
     List<T> find(int start, int count, String order);
+
+
 
 }

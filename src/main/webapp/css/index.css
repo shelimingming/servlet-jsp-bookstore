@@ -1,0 +1,32 @@
+#body {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center
+}
+
+#search {
+    width: 1000px;
+    height: 20px;
+    background-color: aqua;
+}
+
+#navigation {
+    width: 1000px;
+    height: 20px;
+    background-color: bisque;
+}
+
+#main {
+    width: 700px;
+    height: 2000px;
+    margin: 0 0 0 0;
+    float: left;
+}
+
+#user {
+    width: 300px;
+    height: auto;
+    background-color: deeppink;
+    float: left;
+}
