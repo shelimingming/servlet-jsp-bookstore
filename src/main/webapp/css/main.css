@@ -1,0 +1,16 @@
+.bookList {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style-type:none;
+}
+
+.book {
+    width: 150px;
+    height: 250px;
+    margin-right: 47px;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: visible;
+    float: left;
+}

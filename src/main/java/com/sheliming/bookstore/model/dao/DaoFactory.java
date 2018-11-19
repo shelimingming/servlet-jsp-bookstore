@@ -3,6 +3,7 @@ package com.sheliming.bookstore.model.dao;
 import com.sheliming.bookstore.model.dao.impl.AccountDaoImpl;
 import com.sheliming.bookstore.model.dao.impl.BookDaoImpl;
 import com.sheliming.bookstore.model.dao.impl.ConsigneeDaoImpl;
+import com.sheliming.bookstore.model.dao.impl.ImageDaoImpl;
 
 import java.util.WeakHashMap;
 
@@ -27,6 +28,8 @@ public class DaoFactory {
             dao = new AccountDaoImpl();
         } else if("consignee".equals(name)) {
             dao = new ConsigneeDaoImpl();
+        } else if("image".equals(name)) {
+            dao = new ImageDaoImpl();
         }
         return dao;
     }

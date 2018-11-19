@@ -9,6 +9,8 @@ public class Book implements Serializable {
     private String description;
     private Double price;
 
+    private Image image;
+
     @Override
     public String toString() {
         return "Book{" +
@@ -16,6 +18,7 @@ public class Book implements Serializable {
                 ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
                 ", price=" + price +
+                ", image=" + image +
                 '}';
     }
 
@@ -49,5 +52,13 @@ public class Book implements Serializable {
 
     public void setPrice(Double price) {
         this.price = price;
+    }
+
+    public Image getImage() {
+        return image;
+    }
+
+    public void setImage(Image image) {
+        this.image = image;
     }
 }

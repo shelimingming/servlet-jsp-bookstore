@@ -30,6 +30,9 @@ ${bookList}--%>
     <div id="cart">
         <jsp:include page="page/cart.jsp"/>
     </div>
+    <div id="foot">
+        注脚
+    </div>
 </div>
 
 </body>

@@ -2,6 +2,7 @@ package com.sheliming.bookstore.model.dao.impl;
 
 import com.sheliming.bookstore.commons.JdbcTemplate;
 import com.sheliming.bookstore.model.entity.Book;
+import com.sheliming.bookstore.model.entity.Image;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -34,6 +35,10 @@ public class BookDaoImpl extends CommonDaoImpl<Book> {
                 book.setName(rs.getString("name"));
                 book.setDescription(rs.getString("description"));
                 book.setPrice(rs.getDouble("price"));
+
+                Image image = new Image();
+                image.setId(rs.getInt("image_id"));
+                book.setImage(image);
 
                 return book;
             }

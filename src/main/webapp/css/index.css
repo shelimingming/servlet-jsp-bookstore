@@ -19,7 +19,7 @@
 
 #main {
     width: 700px;
-    height: 2000px;
+    height: 1000px;
     margin: 0 0 0 0;
     float: left;
 }
@@ -29,4 +29,18 @@
     height: auto;
     background-color: deeppink;
     float: left;
+}
+
+#cart {
+    width: 300px;
+    height: auto;
+    background-color: darkred;
+    float: left;
+}
+
+#foot {
+    width: 1000px;
+    height: 20px;
+    background-color: black;
+    clear: both;
 }
