@@ -29,7 +29,10 @@ public class ServiceFactory {
             service = new AccountServiceImpl();
         } else if ("consignee".equals(name)) {
             service = new ConsigneeServiceImpl();
+        } else {
+            return null;
         }
+        map.put(name,service);
         return service;
     }
 }
